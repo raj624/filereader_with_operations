@@ -1,0 +1,9 @@
+emp_id,name,role,status
+e001,Emp1,developer,active
+e002,Emp2,developer,active
+e003,Emp3,Test_analyst,active
+e004,Emp4,Sys_admin,active
+e005,Emp5,Manager,active
+e006,Emp6,developer,inactive
+e007,Emp7,Manager,inactive
+e008,Emp8,DBA,active

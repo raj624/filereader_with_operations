@@ -1,0 +1,7 @@
+Emp_id	Name	Age	Status	Hobby
+e001	Emp01	23	active	reading
+e002	Emp02	25	active	music
+e003	Emp03	29	inactive	reading
+e004	Emp04	31	active	singing
+e005	Emp05	26	inactive	music
+e006	Emp06	28	active	music
