@@ -41,7 +41,7 @@ while True:
             v2 = raw_input('Enter row_no to read, MAX-{} :-> '.format(len(data)))
             if int(v2) != 0:
                 row = data[int(v2)-1]
-                print('ROW-{} data : {} \n'.format(v2, row))
+                print('ROW-{} data : {} \n'.format(v2, row.strip(lineterm).split(delim)))
             else:
                 raise ValueError('Enter valid row_no to read, 1 to MAX-{}\n '.format(len(data)))
         elif int(v1)==3:
@@ -49,7 +49,7 @@ while True:
             v3 = raw_input('Enter field_no to read, MAX-{} :-> '.format(len(h_row)))
             if int(v3) != 0:
                 fields = [x.strip(lineterm).split(delim)[int(v3)-1] for x in data]
-                print('FIELD-{} data : {} \n'.format(v3, fields))
+                print('FIELD-{}({}) data : {} \n'.format(v3,h_row[int(v3)-1], fields))
             else:
                 raise ValueError('Enter valid field_no to read, 1 to MAX-{}'.format(len(h_row)))
         elif int(v1)==4:
@@ -60,6 +60,9 @@ while True:
             print(lineterm)
         elif int(v1)==5:
             exit(0)
+        else:
+            raise ValueError('Enter valid options (1 to 5)')
+
     except Exception as e:
         print('Exception/Error : {} \n'.format(e))
 
